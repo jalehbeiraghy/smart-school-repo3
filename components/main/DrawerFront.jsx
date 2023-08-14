@@ -63,10 +63,12 @@ const DrawerFront = ({ isOpen, onClose }) => {
                 {/* <Image  src={img2}  alt="carnet" width='450' height='150'
                   className=" h-3/4 rounded-t-xl w-1/3 drop-shadow-xl  object-contain "/> */}
        
+                <Link href='/dashboard_s'>
                 <div className='flex justify-center  items-center'>
                  <h3 className="text-gray-100 text-center w-full px-4 py-2">Home</h3>
                  <AiFillHome className="text-4xl mr-4 text-gray-100" />
                 </div>
+                </Link>
 
               </div>
            
@@ -74,10 +76,12 @@ const DrawerFront = ({ isOpen, onClose }) => {
                 {/* <Image  src={img2}  alt="carnet" width='450' height='150'
                   className=" h-3/4 rounded-t-xl w-1/3 drop-shadow-xl  object-contain "/> */}
        
+                <Link href='/schedule'>
                 <div className='flex justify-center  items-center'>
                  <h3 className="text-gray-100 text-center w-full px-4 py-2"> Schedule</h3>
                  <AiFillSchedule className="text-4xl mr-4 text-gray-100" />
                 </div>
+                </Link>
 
               </div>
 

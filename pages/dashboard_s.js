@@ -10,7 +10,7 @@ import DrawerFront from '@/components/main/DrawerFront'
 import { RiMenuUnfoldFill, RiHome2Line } from 'react-icons/ri';
 import Link from 'next/link'
 import { Progress, ChakraProvider } from '@chakra-ui/react'
-
+import Slider_lessons from '@/components/main/slider_lessons'
 
 
 const dashboard_s = () => {
@@ -110,32 +110,11 @@ const dashboard_s = () => {
           <div className='w-full p-[5%] bg-gray-500 rounded-lg font-semibold text-white'>Art</div>
 
         </div>
-        <div className='w-1/3 bg-gray-300 flex flex-col px-[20%] font-semibold justify-center items-center scrollbar-hide overflow-auto '>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
-         <p>lesson1</p>
+        <div className='w-1/3 bg-gray-300  '>
+          <div className='w-full h-full'>
+         <Slider_lessons/>
 
+          </div>
 
           
 
