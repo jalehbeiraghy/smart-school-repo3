@@ -10,8 +10,8 @@ import DrawerFront from '@/components/main/DrawerFront'
 import { RiMenuUnfoldFill, RiHome2Line } from 'react-icons/ri';
 import Link from 'next/link'
 import { Progress, ChakraProvider } from '@chakra-ui/react'
-import Slider_lessons from '@/components/main/slider_lessons'
-
+import Slider_lessons from '../components/main/Slider_lessons'
+import Slider_course from '../components/main/Slider_course'
 
 const dashboard_s = () => {
 
@@ -30,8 +30,14 @@ const dashboard_s = () => {
     <div>
       <ChakraProvider>
       <div className=' max-h-screen w-full flex flex-row md:flex-col'>
-        <div className=' w-3/5 md:w-full flex flex-row'>
-       
+    
+        <div className='lelative w-3/5 md:w-full flex flex-row'>
+        <div className='  absolute top-1 left-0 '>
+                <button onClick={handleOpen}>
+                <RiMenuUnfoldFill className='text-black text-2xl mx-4'/>
+                </button>
+                <DrawerFront isOpen={isOpen} onClose={handleClose} />
+             </div>
         
 
         <div className=' w-full'>
@@ -41,21 +47,20 @@ const dashboard_s = () => {
           <div className=' w-full h-1/2 flex flex-row  space-y-2 border-b-2 border-b-white'>
          <div className=' w-1/3 h-full flex flex-col justify-center items-center'>
           
-         <div className=' items-center my-1 justify-center'>
-                <button onClick={handleOpen}>
-                <RiMenuUnfoldFill className='text-black text-2xl mx-4'/>
-                </button>
-                <DrawerFront isOpen={isOpen} onClose={handleClose} />
-             </div>
+        
 
           <p className=' font-bold'> Teammates </p>
-          <div className=' w-1/2 bg-white p-2 rounded-lg flex justify-center  items-center text-center font-semibold'>
+          <div className=' w-1/2 bg-white px-7 rounded-lg flex flex-col justify-center  items-center text-center font-semibold'>
           
-            sara
-            amir
-            sanaz
-            farzad
-            kivan
+            <p>sara</p>
+            <p>amir</p>
+            <p>sanaz</p>
+            <p>farzad</p>
+            <p>kivan</p>
+           
+            
+            
+            
             
 
           </div>
@@ -63,20 +68,20 @@ const dashboard_s = () => {
          <div className=' w-2/3  flex flex-col items-center justify-center space-y-2'>
           <Image src='/images/5.jpg'  width='800' height='600' alt="jaleh" className=' rounded-full h-20 w-20'/>
           <div className='  bg-white p-2 rounded-lg flex justify-center  items-center text-center font-semibold'>
-          ----- chat room -----
+          <p> chat room </p>
 
           </div>
          </div>
 
           </div>
           <div className=' w-full h-1/2  '>
-            <div className='flex justify-center items-center w-full h-full '><Polar/></div>
+            <div className='flex justify-center items-center w-full h-full p-2 '><Polar/></div>
             
           </div>
 
         </div>
         <div className=' w-1/2 flex flex-col  '>
-        <div className=' w-full h-1/2 border-b-2 border-b-gray-200'>
+        <div className=' w-full h-1/2 border-b-2 border-b-gray-200 p-2 flex justify-center items-center'>
          <CalendarS/>
          </div>
          <div className=' w-full h-1/2  '>
@@ -101,20 +106,27 @@ const dashboard_s = () => {
           <p className='font-semibold space-y-2'>My Studies</p>
         <Progress  colorScheme='blue'  value={80} />
           </div>
+
+
+
         <div className=' h-3/6 w-full flex'>
-                          <div className=' w-2/3 bg-gray-400 flex flex-col items-center justify-center p-[5%] space-y-[5%]'>
-          <div className='w-full p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className='w-full p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className='w-full p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
-          <div className='w-full p-[5%] bg-gray-300 rounded-lg font-semibold text-white'>Physices</div>
-          <div className='w-full p-[5%] bg-gray-500 rounded-lg font-semibold text-white'>Art</div>
+                          <div className=' w-2/3 bg-gray-400  overflow-auto scrollbar-hide'>
+                          <Slider_course/>
 
         </div>
-        <div className='w-1/3 bg-gray-300  '>
-          <div className='w-full h-full'>
-         <Slider_lessons/>
+        <div className='w-1/3 bg-green-400 flex flex-col '>
+         
 
+        < p className=" text-red-500 font-semibold p-2">My lessons</p>
+         
+          <div className='  overflow-auto scrollbar-hide'>
+
+             <Slider_lessons/>
           </div>
+
+         
+
+      
 
           
 

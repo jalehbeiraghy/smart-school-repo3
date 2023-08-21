@@ -17,7 +17,7 @@ class Polygon extends React.Component {
           }],
           options: {
             chart: {
-              height: 200,
+              height: 180,
              
               type: 'radar',
             },
@@ -26,7 +26,7 @@ class Polygon extends React.Component {
             },
             plotOptions: {
               radar: {
-                size: 80,
+                size: 70,
                 polygons: {
                   strokeColors: '#e9e9e9',
                   fill: {
@@ -36,7 +36,8 @@ class Polygon extends React.Component {
               }
             },
             title: {
-              text: 'Radar with Polygon Fill'
+              // text: 'Radar with Polygon Fill'
+              
             },
             colors: ['#FF4560'],
             markers: {
@@ -81,7 +82,7 @@ class Polygon extends React.Component {
 
 
     <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="radar"  height={200} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="radar"  height={180} />
 </div>
   
 

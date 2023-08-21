@@ -4,12 +4,14 @@ import Slider from "react-slick";
 export default class VerticalMode extends Component {
   render() {
     const settings = {
-      dots:true,
+      dots:false,
       infinite: true,
-      slidesToShow: 10,
-      slidesToScroll: 10,
+      slidesToShow: 20,
+      slidesToScroll: 20,
       vertical: true,
       verticalSwiping: true,
+      arrows:false,
+      
       beforeChange: function(currentSlide, nextSlide) {
         console.log("before change", currentSlide, nextSlide);
       },
@@ -18,9 +20,9 @@ export default class VerticalMode extends Component {
       }
     };
     return (
-      <div>
-        <h2 className=" text-red-500 font-semibold p-2">My lessons</h2>
-        <Slider {...settings} className=" flex justify-center items-center">
+      <div className='h-full'>
+        
+        <Slider {...settings} className="h-full flex justify-center  items-center">
           <div >
             <h3>lesson1</h3>
           </div>
@@ -81,6 +83,40 @@ export default class VerticalMode extends Component {
           <div>
             <h3>lesson10</h3>
           </div>
+
+
+          <div >
+            <h3>lesson1</h3>
+          </div>
+          <div>
+            <h3>lesson2</h3>
+          </div>
+          <div>
+            <h3>lesson3</h3>
+          </div>
+          <div>
+            <h3>lesson4</h3>
+          </div>
+          <div>
+            <h3>lesson5</h3>
+          </div>
+          <div>
+            <h3>lesson6</h3>
+          </div>
+          <div>
+            <h3>lesson7</h3>
+          </div>
+          <div>
+            <h3>lesson8</h3>
+          </div>
+          <div>
+            <h3>lesson9</h3>
+          </div>
+          <div>
+            <h3>lesson10</h3>
+          </div>
+         
+          
         </Slider>
       </div>
     );

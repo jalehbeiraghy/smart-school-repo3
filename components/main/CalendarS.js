@@ -6,7 +6,7 @@ function CalendarS() {
  const [date, setDate] = useState(new Date());
 
  return (
- <div className='w-[350px] font-semibold text-gray-600 p-4 '>
+ <div className='font-semibold text-gray-600 p-4 '>
  
    <div>
      <Calendar onChange={setDate} value={date} selectRange={true}/>

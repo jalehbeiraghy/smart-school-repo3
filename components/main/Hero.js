@@ -2,12 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Polygon from './Polygan'
-import Line from './Line'
-import Polar from './Polar'
+
 const hero = () => {
   return (
     <div>
-     <div className='  flex flex-row  md:flex-col-reverse'>
+     <div className=' h-screen md:h-full flex flex-row  md:flex-col-reverse'>
 
         <div className=' w-2/5 md:w-full bg-gray-100 flex-col '>
            <div className=' h-2/5'>
@@ -29,7 +28,7 @@ const hero = () => {
             </div> 
            <div className=' flex h-2/5 '>
             <div className=' w-1/2 bg-yellow-500 flex items-center justify-center '> 
-            <div className='w-full h-full flex justify-center items-center'>
+            <div className='w-full h-full flex justify-center items-center p-2'>
             <Polygon/>  
 
             </div>
@@ -45,9 +44,38 @@ const hero = () => {
             </div> 
         </div>
 
-        <div className='  p-[5%] space-x-[5%]  w-3/5 md:w-full bg-slate-300 grid grid-cols-2 md:grid-cols-1 md:space-x-[0%] space-y-[5%] '>
-            <div className=' relative  row-span-3 bg-slate-500 rounded-lg '>
-                <Image src='/images/4.jpg' width='800' height='600' alt="ceo" className=' object-cover   h-full object-center rounded-lg'/> 
+        <div className='  p-5 gap-4  w-3/5 md:w-full bg-slate-300 grid grid-cols-2 
+ '>
+
+
+            <div className= ' relative  row-span-3'>
+            <Image src='/images/3.jpg' width='400' height='600' alt="ceo"
+                className=' object-fill h-full rounded-lg' /> 
+                <div className='  w-full py-7 space-y-3 absolute bottom-0 bg-white rounded-lg'>
+                    <p className='text-center font-bold '> Discover TOP Teachers </p>
+                    <div className=' flex justify-around '>
+                    <p > Class </p>
+                    <p > Reseme </p>
+                    <p > Profile </p>
+                    </div>
+                </div>
+            </div>
+            <div className='flex items-center justify-center'>
+            <Image src='/images/2.jpg' width='280' height='280' alt="ceo" className='   rounded-lg'/> 
+
+            </div>
+            <div className='flex items-center justify-center'>
+            <Image src='/images/4.jpg' width='280' height='280' alt="ceo" className='   rounded-lg'/> 
+
+            </div>
+            <div className='flex items-center justify-center'>
+            <Image src='/images/2.jpg' width='280' height='280' alt="ceo" className=' object-contain  rounded-lg'/> 
+
+            </div>
+
+            {/* <div className=' relative  row-span-3 bg-slate-500 rounded-lg '>
+                <Image src='/images/3.jpg' width='400' height='400' alt="ceo"
+                 className='   h-full  '/> 
                 <div className='  w-full py-7 space-y-3 absolute bottom-0 bg-white rounded-lg'>
                     <p className='text-center font-bold '> Discover TOP Teachers </p>
                     <div className=' flex justify-around '>
@@ -65,7 +93,7 @@ const hero = () => {
             </div>
             <div className='  bg-purple-500 rounded-lg items-center justify-center'>
             <Image src='/images/2.jpg' width='800' height='600' alt="ceo" className='w-full h-full object-cover  rounded-lg'/> 
-            </div>
+            </div> */}
 
             
 

@@ -1,33 +1,32 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Polar from '@/components/main/Polar'
+
 import Polygon from '@/components/main/Polygan'
 
 const dashboard = () => {
   return (
     <div>
-        <div className=' min-h-screen w-full flex  flex-row md:flex-col-reverse'>
+        <div className=' h-screen md:h-full w-full flex  flex-row md:flex-col-reverse'>
            
-            <div className='   w-3/5 md:w-full '>
-            <div className='  grid grid-cols-2 p-[30%] md:p-[10%] gap-2 '>
+            <div className='   w-3/5 md:w-full flex justify-center items-center '>
+            <div className='  grid grid-cols-2  md:p-[10%] gap-8 '>
                 
                
                        <Link href='/dashboard_s'>
-                       
-                        <div className=' bg-gray-300 flex justify-center items-center p-[20%]  rounded-lg '>
-                        <p className=' text-center text-gray-600 text-2xl font-bold'> Student </p>
+                        <div className=' bg-gray-300   flex justify-center items-center   rounded-lg '>
+                        <p className=' text-center text-gray-600 text-2xl font-bold p-10'> Student </p>
                         </div>
                         </Link>
                     
-                    <div className=' bg-gray-400 flex justify-center items-center p-[20%]   rounded-lg '>
-                        <p className=' text-center  text-white text-2xl font-bold'> Teacher </p>
+                    <div className=' bg-gray-400 flex justify-center items-center    rounded-lg '>
+                        <p className=' text-center  text-white text-2xl font-bold p-10'> Teacher </p>
                     </div>
-                    <div className=' bg-gray-400 flex justify-center items-center p-[20%]   rounded-lg '>
-                        <p className=' text-center  text-white text-2xl font-bold'> Parents </p>
+                    <div className=' bg-gray-400 flex justify-center items-center    rounded-lg '>
+                        <p className=' text-center  text-white text-2xl font-bold p-10'> Parents </p>
                     </div>
-                    <div className=' bg-gray-200 flex justify-center items-center p-[20%]   rounded-lg  '>
-                        <p className=' text-center text-gray-600 text-2xl font-bold'> Admin </p>
+                    <div className=' bg-gray-200 flex justify-center items-center    rounded-lg  '>
+                        <p className=' text-center text-gray-600 text-2xl font-bold p-10'> Admin </p>
                     </div>
 
                 </div>
@@ -36,7 +35,8 @@ const dashboard = () => {
                 
 
                 <div className=' h-3/5 bg-orange-300'>
-                <Image src='/images/3.jpg' width='800' height='600' alt="ceo" className='w-full h-full object-cover  '/> 
+                <Image src='/images/4.jpg' width='800' height='600' alt="ceo" 
+                className='w-full h-full object-over '/> 
                 </div>
                 <div className=' flex h-2/5 '>
             
@@ -48,7 +48,7 @@ const dashboard = () => {
                     <p className='font-bold text-xl text-center text-red-600'>No Blind Spot </p> 
                     </div>
             </div>
-            <div className=' w-1/2 bg-yellow-500 flex items-center justify-center '> 
+            <div className=' w-1/2 bg-yellow-500 flex items-center justify-center p-2 '> 
             <Polygon/>
              </div>
             </div> 

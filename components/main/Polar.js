@@ -18,7 +18,8 @@ class Polar extends React.Component {
             chart: {
               width: 280,
               type: 'polarArea'
-              
+             
+
             },
            labels: ['Rose A', 'Rose B', 'Rose C', 'Rose D', 'Rose E'],
            

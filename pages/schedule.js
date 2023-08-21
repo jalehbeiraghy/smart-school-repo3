@@ -23,8 +23,8 @@ const schedule = () => {
   return (
     <div>
 <ChakraProvider>
-<div className=' max-h-screen w-full flex flex-row'>
-  <div className=' max-h-screen w-1/3 flex flex-col'> 
+<div className=' h-screen md:h-full w-full flex flex-row md:flex-col-reverse'>
+  <div className=' h-screen w-1/3 md:w-full flex flex-col'> 
   <div className='h-2/5 bg-gray-200 p-4'>
   <button onClick={handleOpen}>
                 <RiMenuUnfoldFill className='text-black text-2xl mx-4'/>
@@ -64,8 +64,8 @@ const schedule = () => {
       </div>   
    </div>
   
-  <div className=' w-2/3 flex flex-col'>   
-  <div className= ' h-2/5  bg-white flex flex-row p-4'>
+  <div className=' w-2/3 flex flex-col md:w-full'>   
+  <div className= ' h-2/5  bg-white flex flex-row md:flex-col p-4'>
   <p className=' text-red-500 font-semibold text-lg '>My Classes</p>
       <CalendarS/>
       <Polygan/>
