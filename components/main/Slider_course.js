@@ -22,31 +22,21 @@ export default class VerticalMode extends Component {
     return (
       <div className='h-full'>
         
-        <Slider {...settings} className="h-full p-5 gap-2 ">
-        <div className=' p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className=' p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className=' p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
-          <div className=' p-[5%] bg-gray-300 rounded-lg font-semibold text-white'>Physices</div>
-          <div className=' p-[5%] bg-gray-500 rounded-lg font-semibold text-white'>Art</div>
-          <div className=' p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className=' p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className=' p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
-          <div className=' p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className=' p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className=' p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
-          <div className=' p-[5%] bg-gray-300 rounded-lg font-semibold text-white'>Physices</div>
-          <div className=' p-[5%] bg-gray-500 rounded-lg font-semibold text-white'>Art</div>
-          <div className=' p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className=' p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className=' p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
-          <div className=' p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className=' p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className=' p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
-          <div className=' p-[5%] bg-gray-300 rounded-lg font-semibold text-white'>Physices</div>
-          <div className=' p-[5%] bg-gray-500 rounded-lg font-semibold text-white'>Art</div>
-          <div className=' p-[5%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
-          <div className=' p-[5%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
-          <div className=' p-[5%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
+        <Slider {...settings} className=" p-5 gap-2 ">
+        <div className=' p-[5%] md:p-[0%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
+          <div className=' p-[5%] md:p-[0%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
+          <div className=' p-[5%] md:p-[0%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
+          <div className=' p-[5%] md:p-[0%] bg-gray-300 rounded-lg font-semibold text-white'>Physices</div>
+          <div className=' p-[5%] md:p-[0%] bg-gray-500 rounded-lg font-semibold text-white'>Art</div>
+          <div className=' p-[5%] md:p-[0%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
+          <div className=' p-[5%] md:p-[0%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
+          <div className=' p-[5%] md:p-[0%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
+          <div className=' p-[5%] md:p-[0%] bg-yellow-300 rounded-lg font-semibold text-white'>Biology</div>
+          <div className=' p-[5%] md:p-[0%] bg-pink-300 rounded-lg font-semibold text-white'>Chimistry</div>
+          <div className=' p-[5%] md:p-[0%] bg-blue-300 rounded-lg font-semibold text-white'>Math</div>
+          <div className=' p-[5%] md:p-[0%] bg-gray-300 rounded-lg font-semibold text-white'>Physices</div>
+          
+         
           
         </Slider>
       </div>

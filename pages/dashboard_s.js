@@ -29,10 +29,10 @@ const dashboard_s = () => {
   return (
     <div>
       <ChakraProvider>
-      <div className=' max-h-screen w-full flex flex-row md:flex-col'>
+      <div className=' max-h-screen w-full flex flex-row lg:flex-col'>
     
-        <div className='lelative w-3/5 md:w-full flex flex-row'>
-        <div className='  absolute top-1 left-0 '>
+        <div className=' w-3/5 lg:w-full lg:h-1/2 flex flex-row'>
+        <div className='  fixed top-1 left-0 z-20 '>
                 <button onClick={handleOpen}>
                 <RiMenuUnfoldFill className='text-black text-2xl mx-4'/>
                 </button>
@@ -43,13 +43,13 @@ const dashboard_s = () => {
         <div className=' w-full'>
           
         <div className=' h-4/6 w-full flex'>
-        <div className=' w-1/2 bg-gray-200 flex flex-col '>
+        <div className=' w-1/2 bg-gray-200 flex flex-col justify-center items-center'>
           <div className=' w-full h-1/2 flex flex-row  space-y-2 border-b-2 border-b-white'>
-         <div className=' w-1/3 h-full flex flex-col justify-center items-center'>
+         <div className=' w-1/3 h-full flex flex-col justify-center items-center '>
           
         
 
-          <p className=' font-bold'> Teammates </p>
+          <p className=' font-bold  w-full text-center whitespace-nowrap'> Teammates </p>
           <div className=' w-1/2 bg-white px-7 rounded-lg flex flex-col justify-center  items-center text-center font-semibold'>
           
             <p>sara</p>
@@ -92,13 +92,13 @@ const dashboard_s = () => {
         </div>
         <div className=' h-2/6 bg-gray-200 flex flex-col'>
           <div className=' h-1/3 p-1'><SliderP/></div>
-         <div className=' h-2/3'> <Slider1/> </div>
+         <div className='  h-2/3'> <Slider1/> </div>
         </div>
           </div> 
 
         </div>
         
-        <div className='   w-2/5 md:w-full'>
+        <div className='   w-2/5 lg:w-full lg:h-1/2'>
         <div className=' h-2/6 w-full bg-gray-500 '>
        <Line/>
         </div>
@@ -109,8 +109,9 @@ const dashboard_s = () => {
 
 
 
-        <div className=' h-3/6 w-full flex'>
+        <div className=' h-3/6  w-full flex flex-row '>
                           <div className=' w-2/3 bg-gray-400  overflow-auto scrollbar-hide'>
+                            
                           <Slider_course/>
 
         </div>

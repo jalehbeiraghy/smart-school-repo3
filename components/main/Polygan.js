@@ -18,7 +18,7 @@ class Polygon extends React.Component {
           options: {
             chart: {
               height: 180,
-             
+            
               type: 'radar',
             },
             dataLabels: {

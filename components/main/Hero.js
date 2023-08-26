@@ -6,9 +6,9 @@ import Polygon from './Polygan'
 const hero = () => {
   return (
     <div>
-     <div className=' h-screen md:h-full flex flex-row  md:flex-col-reverse'>
+     <div className='  h-screen lg:h-full flex flex-row  md:flex-col'>
 
-        <div className=' w-2/5 md:w-full bg-gray-100 flex-col '>
+        <div className='  md:h-1/2 w-2/5 md:w-full bg-gray-100 flex-col '>
            <div className=' h-2/5'>
             <div className=' w-1/3 flex-col h-full '>
                 <div className=' h-1/2 bg-orange-400 flex justify-center items-center '>
@@ -44,14 +44,14 @@ const hero = () => {
             </div> 
         </div>
 
-        <div className='  p-5 gap-4  w-3/5 md:w-full bg-slate-300 grid grid-cols-2 
+        <div className=' md:h-1/2 p-5 gap-4  w-3/5 md:w-full bg-slate-300 grid grid-cols-2 lg:grid-cols-1
  '>
 
 
             <div className= ' relative  row-span-3'>
             <Image src='/images/3.jpg' width='400' height='600' alt="ceo"
-                className=' object-fill h-full rounded-lg' /> 
-                <div className='  w-full py-7 space-y-3 absolute bottom-0 bg-white rounded-lg'>
+                className='  w-full object-fill h-full rounded-lg' /> 
+                <div className=' w-full py-5 space-y-3 absolute bottom-0 bg-white rounded-lg'>
                     <p className='text-center font-bold '> Discover TOP Teachers </p>
                     <div className=' flex justify-around '>
                     <p > Class </p>
@@ -60,6 +60,9 @@ const hero = () => {
                     </div>
                 </div>
             </div>
+
+
+
             <div className='flex items-center justify-center'>
             <Image src='/images/2.jpg' width='280' height='280' alt="ceo" className='   rounded-lg'/> 
 

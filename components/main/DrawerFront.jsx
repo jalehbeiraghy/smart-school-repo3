@@ -44,10 +44,10 @@ const DrawerFront = ({ isOpen, onClose }) => {
         }`}
     >
       <div className="fixed inset-0 bg-gray-600 bg-opacity-75"></div>
-      <div className="absolute inset-y-0 right-0  flex">
+      <div className="absolute inset-y-0 left-0  flex">
         <div
           ref={drawerRef}
-          className={`w-screen max-w-xs transform transition ease-in-out duration-500 ${isOpen ? "translate-x-0" : "translate-x-full"
+          className={`w-screen md:w-5/6 max-w-xs transform transition ease-in-out duration-500 ${isOpen ? "translate-x-0" : "translate-x-full"
             }`}
         >
           <div className="h-full  z-50 bg-gray-200  shadow-lg  p-4">

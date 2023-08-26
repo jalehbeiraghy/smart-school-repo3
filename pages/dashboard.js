@@ -9,7 +9,7 @@ const dashboard = () => {
     <div>
         <div className=' h-screen md:h-full w-full flex  flex-row md:flex-col-reverse'>
            
-            <div className='   w-3/5 md:w-full flex justify-center items-center '>
+            <div className=' md:h-1/3 w-1/2 md:w-full flex justify-center items-center '>
             <div className='  grid grid-cols-2  md:p-[10%] gap-8 '>
                 
                
@@ -31,7 +31,7 @@ const dashboard = () => {
 
                 </div>
                 </div>
-                <div className='  w-2/5  md:w-full flex flex-col '>
+                <div className=' md:h-2/3 w-1/2  md:w-full flex flex-col '>
                 
 
                 <div className=' h-3/5 bg-orange-300'>
